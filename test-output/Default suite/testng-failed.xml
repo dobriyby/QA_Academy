@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="color" value="GREEN"/>
+  <parameter name="inkContainerValue" value="1200"/>
+  <parameter name="sizeLetter" value="3"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.dobriy.test.PenTest">
+        <methods>
+          <include name="writeTest" invocation-numbers="1 3 4 5 7"/>
+          <include name="setUp"/>
+          <include name="getColorTest"/>
+        </methods>
+      </class> <!-- com.dobriy.test.PenTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
